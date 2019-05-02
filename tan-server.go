@@ -18,8 +18,8 @@ func main() {
 
 	// register functions to handle all requests
 	server := http.NewServeMux()
-	server.HandleFunc("/tan/num", tan_num)
-	server.HandleFunc("/tan/anum", tan_anum)
+	server.HandleFunc("/tan-server/num", tan_num)
+	server.HandleFunc("/tan-server/anum", tan_anum)
 
 	// start the web server on port and accept requests
 	log.Printf("Server listening on port %s", port)
