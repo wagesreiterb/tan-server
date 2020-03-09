@@ -52,7 +52,7 @@ func tan_anum(w http.ResponseWriter, r *http.Request) {
 	log.Printf("func: tan_alpha; serving request: %s", r.URL.Path)
 	host, _ := os.Hostname()
 
-	fmt.Fprintf(w, "Alphanumberic TAN - Version: 1.0.0\n")
+	fmt.Fprintf(w, "Alphanumberic TAN - Version: 1.0.1\n")
 	fmt.Fprintf(w, "Serving host: Hostname: %s\n", host)
 	fmt.Fprintf(w, "%s\n", randomString(6)) // print 10 chars
 }
